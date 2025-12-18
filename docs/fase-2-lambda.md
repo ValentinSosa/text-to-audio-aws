@@ -121,4 +121,14 @@ Esto valida que el flujo asincrónico funciona correctamente.
 ✔ Lambda ejecutándose correctamente
 ✔ Flujo validado con prueba real
 
+📌 Nota sobre evolución de IAM
+
+En esta fase se utilizó la policy administrada AWSLambdaBasicExecutionRole
+para simplificar la validación inicial del flujo S3 → Lambda.
+
+En fases posteriores (FASE 3), este enfoque se refactoriza hacia políticas
+personalizadas con permisos específicos para S3 y Amazon Polly, siguiendo
+mejores prácticas de seguridad y control.
+
+
 La base está lista para avanzar a **FASE 3 — Conversión de texto a audio con Amazon Polly** 🚀
